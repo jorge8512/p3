@@ -1,0 +1,33 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        text: 'Guardados...'
+        id: etiqueta_1
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Guardados2...'
+            id: etiqueta_2
+
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            text: 'Nombre'
+            id: entrada_1
+       
+        Button:
+            id: btn1
+            text: 'Guardar'
+            on_press: app.submit()
+
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            text: 'Apellido'
+            id: entrada_2
+       
+        Button:
+            id: btn2
+            text: 'Mostrar'
+            on_press: app.show_records()         
